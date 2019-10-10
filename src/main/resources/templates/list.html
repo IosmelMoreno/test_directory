@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+    <title th:remove="all">Template for HTML</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ </head>
+ <body>
+ 
+   <table>
+   <th:block th:each="per : ${listUser}">
+    <tr >
+      <td th:text="${per.nameUser}" >...</td>
+      <td th:text="${per.lastnames}" >...</td>      
+    </tr>
+   
+   </table>
+ 
+ </body>
+</html>
